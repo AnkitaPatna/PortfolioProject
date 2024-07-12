@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <script src="https://kit.fontawesome.com/47e92b9b6c.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <header>
+    <div id="home">
+        <div class="container">
+            <nav>    
+                <h1>Profile</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>       
+            </nav>
+            <div class="hero flex items-center justify-between">
+                <div class="left flex-1 flex justify-center">
+                    <img src="./images/pic.jpeg" alt="">
+                </div>
+                <div class="right flex-1">
+                    <h6>Hi, I am</h6>
+                    <h1><span>Ankita Prakash</span></h1>
+                    <h6>and I am a <span>Web Developer</span></h6>
+                    <p>I would like to be a part of an organization where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.</p>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <section class="about">
+        <div class="container flex items-center">
+            <div class="flex-1 flex justify-center">
+                <img class="about-me-img" src="./images/pic.jpg" >
+            </div>
+            <div class="flex-1">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello I'm Ankita Prakash</h3>
+                <p>I'm a seasoned Java developer with expertise in building robust and scalable web applications. My skill set encompasses a wide range of Java technologies, including Servlets, JSP, J2EE, and JDBC. I specialize in leveraging powerful frameworks like Hibernate to create efficient and maintainable code.</p>
+                <div class="tab-titles ">
+                   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                   <p class="tab-links" onclick="opentab('education')">Education</p>
+                   <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Designing</li>
+                        <li><span>Frontend Technology</span><br>HTML, CSS, JAVASCRIPT</li>
+                        <li><span>Programing Languages</span><br>Java, Opps, Servlet, Core Java, Mysql, J2EE</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>NPC School Mauza Faridpur Maner PATNA , BIHAR (10th)</li>
+                        <li><span>2020</span><br>DR.B.P YADAV S.S School Babhnaiya , SARAN , BIHAR (12th)</li>
+                        <li><span>2020-2024</span><br>Greater Noida Institute of Technology B.TECH CS-AI&ML</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web Developer Intern</span><br>CodSoft Private Limited</li>
+                        <li><span>Java Developer Training </span><br>Ducat Private Limited</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------services----------------->
+    <div>
+        <div id="project">
+            <div class="container">
+                <h1 class="sub-title">Project</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design, user interface design authoring, including standardised code and proprietary software</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-calculator"></i>
+                        <h2>Calculator</h2>
+                        <p>The main objective of this project is to create a basic calculator using CSS, HTML, & Java Script to implement an interactive interface with buttons for addition, subtraction, multiplication, and division operations.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Landing Page</h2>
+                        <p>The main objective of this project is to create a landing page of the Best Fitness and Travel. This landing page include header, body, columns, arrange items and footer section. It is fully responsive and easy to use.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-------------Contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> raioankita@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 6202774846</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>   
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>   
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }    
+    </script>
+</body>
+</html>
